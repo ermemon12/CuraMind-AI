@@ -1,0 +1,26 @@
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* AI Background Image in Hero */
+.hero-ai-bg {
+  position: absolute;
+  top: -50px;        /* move slightly above */
+  right: -50px;      /* move slightly right */
+  width: 700px;      /* increase width */
+  height: 700px;     /* increase height */
+  object-fit: cover; /* scale properly */
+  opacity: 0.15;     /* subtle blending */
+  z-index: 0;        /* behind content */
+  pointer-events: none; /* allow clicks on buttons/text */
+  transition: transform 0.5s ease; /* optional smooth hover effect */
+}
+
+.hero-ai-bg:hover {
+  transform: scale(1.05); /* subtle zoom on hover */
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease-in-out;
+}
